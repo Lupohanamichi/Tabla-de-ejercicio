@@ -1,50 +1,50 @@
 export const COLUMNS = [
     {
-        Header: 'ID'
+        Header: 'ID',
         accessor: 'ID'
     },
     {
-        Header: 'Comercio'
+        Header: 'Comercio',
         accessor: 'Comercio'
     },
     {
-        Header: 'CUIT'
+        Header: 'CUIT',
         accessor: 'CUIT'
     },
     {
-        Header: 'Concepto 1'
+        Header: 'Concepto 1',
         accessor: 'Concepto 1'
     },
     {
-        Header: 'Concepto 2'
+        Header: 'Concepto 2',
         accessor: 'Concepto 2'
     },
     {
-        Header: 'Concepto 3'
+        Header: 'Concepto 3',
         accessor: 'Concepto 3'
     },
     {
-        Header: 'Concepto 4'
+        Header: 'Concepto 4',
         accessor: 'Concepto 4'
     },
     {
-        Header: 'Concepto 5'
+        Header: 'Concepto 5',
         accessor: 'Concepto 5'
     },
     {
-        Header: 'Concepto 6'
+        Header: 'Concepto 6',
         accessor: 'Concepto 6'
     },
     {
-        Header: 'Balance actual'
+        Header: 'Balance actual',
         accessor: 'Balance actual'
     },
     {
-        Header: 'Activo'
+        Header: 'Activo',
         accessor: 'Activo'
     },
     {
-        Header: 'Última venta'
+        Header: 'Última venta',
         accessor: 'Última venta'
     },
 ]
