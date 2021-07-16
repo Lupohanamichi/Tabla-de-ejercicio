@@ -9,15 +9,31 @@ export const BasicTable = () => {
     const columns = useMemo(() => COLUMNS, [])
     const data = useMemo(() => MOCK_DATA, [])
 
-    useTable({
+    const tableInstance = useTable({
         columns,
         data
     })
-    
+
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow,
+    } = tableInstance
+     
     return (
-        <div>
-
-        </div>
+        <table {...getTableProps()}>
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>         
+            </thead>
+            <tbody {...getTableBodyProps()}>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     )
-
 }
