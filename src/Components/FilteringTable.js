@@ -1,13 +1,13 @@
 import React, { useMemo } from 'react'
-import { useTable, useGlobalFilter } from 'react-table'
+import { useTable, useGlobalFilter, useFilters } from 'react-table'
 import MOCK_DATA from './MOCK_DATA.json'
 import { COLUMNS } from './Columns'
 import './table.css'
 import { GlobalFilter } from './GlobalFilter'
 
 
-export const FilteringTable = () => {
 
+export const FilteringTable = () => {
     const columns = useMemo(() => COLUMNS, [])
     const data = useMemo(() => MOCK_DATA, [])
 
@@ -19,10 +19,14 @@ export const FilteringTable = () => {
         prepareRow,
         state,
         setGlobalFilter,
-    } = useTable({
+    } = useTable(
+        {
         columns,
         data,
-    }, useGlobalFilter)
+        }, 
+        useFilters,
+        useGlobalFilter
+    )
 
     const { globalFilter } = state
      
@@ -34,11 +38,9 @@ export const FilteringTable = () => {
                 {headerGroups.map((headerGroups) => (
                     <tr {...headerGroups.getHeaderGroupProps()}>
                     {headerGroups.headers.map((column) => (
-                        <th {...column.getHeaderProps(column.getSortByToggleProps)}>
+                        <th {...column.getHeaderProps()}>
                             {column.render('Header')}
-                            <span>
-                                {column.isSorted ? column.isSortedDesc ? ' 🔽' : ' 🔼' : ''}
-                            </span>
+                            <div>{column.canFilter ? column.render('Filter') : null}</div>
                         </th>
                     ))}
                 </tr>   
