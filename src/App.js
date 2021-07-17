@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import { BasicTable } from './Components/BasicTable';
+import { SortingTable } from './Components/SortingTable';
 
 function App() {
   return (
     <div className='App'>
-      <BasicTable />
+      <SortingTable />
     </div>
   )
 }
