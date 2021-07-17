@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import { useTable } from 'react-table'
 import MOCK_DATA from './MOCK_DATA.json'
 import { COLUMNS } from './Columns'
+import './table.css'
 
 
 export const BasicTable = () => {
@@ -39,7 +40,7 @@ export const BasicTable = () => {
                     return (
                         <tr {...row.getRowProps()}>
                             {row.cells.map((cell) => {
-                                return <td {...cells.getCellProps()}>{cell.render('Cell')}</td>
+                                return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                             })}
                     </tr>
                     )
