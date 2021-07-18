@@ -32,13 +32,14 @@ export const FilteringTable = () => {
         canNextPage,
         canPreviousPage,
         pageOptions,
+        setPageSize,
         state,
         prepareRow,
         
     } = tableInstance
     
     const { globalFilter } = state
-    const { pageIndex } = state
+    const { pageIndex, pageSize } = state
 
     return (
         <>
@@ -84,6 +85,16 @@ export const FilteringTable = () => {
                 Next
                 </button>
         </div>
+        <select
+          value={pageSize}
+          onChange={(e) => setPageSize(Number(e.target.value))}
+        >
+          {[5, 10, 15].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              {pageSize !== 200 ? `Mostrar ${pageSize}` : `Mostrar todo`}
+            </option>
+          ))}
+        </select>
         </>
     )
 }
