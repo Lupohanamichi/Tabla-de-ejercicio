@@ -14,9 +14,6 @@ This project is a test table made with "Create-react-app", attentive to the requ
 ***
 The content of the table refers to different businesses located in the table, each one with its different data to be displayed.
 ***
-### Screenshot
-[Screenshot](tabla-de-ejercicio/Screenshot.jpg)
-***
 ## Technologies
 ***
 React Js (Create react App)
