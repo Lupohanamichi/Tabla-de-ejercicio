@@ -1,6 +1,8 @@
 import React from 'react'
-import './App.css'
 import { FilteringTable } from './Components/FilteringTable';
+import { SortingTable } from './Components/SortingTable';
+
+
 
 function App() {
   return (

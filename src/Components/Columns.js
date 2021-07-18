@@ -4,65 +4,85 @@ export const COLUMNS = [
     {
         Header: 'ID',
         accessor: 'id',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableSortBy: true
     },
     {
         Header: 'Comercio',
         accessor: 'comercio',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        ordered: true
     },
     {
         Header: 'CUIT',
         accessor: 'cuit',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        ordered: true
     },
     {
         Header: 'Concepto 1',
         accessor: 'concepto_1',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
     },
     {
         Header: 'Concepto 2',
         accessor: 'concepto_2',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
     },
     {
         Header: 'Concepto 3',
         accessor: 'concepto_3',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
     },
     {
         Header: 'Concepto 4',
         accessor: 'concepto_4',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
     },
     {
         Header: 'Concepto 5',
         accessor: 'concepto_5',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
 
     },
     {
         Header: 'Concepto 6',
         accessor: 'concepto_6',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
 
     },
     {
         Header: 'Balance actual',
         accessor: 'balance_actual',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
 
     },
     {
         Header: 'Activo',
         accessor: 'activo',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableSortBy: true
     },
     {
         Header: 'Última venta',
         accessor: 'ultima_venta',
-        Filter: ColumnFilter
+        Filter: ColumnFilter,
+        disableFilters: true,
+        disableSortBy: true
 
     },
 ]
