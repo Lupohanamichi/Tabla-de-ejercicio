@@ -1,4 +1,4 @@
-#Tabla-de-ejercicio
+#**Tabla-de-ejercicio**
 ***
 This project is a test table made with "Create-react-app", attentive to the request made by the KOIBANX team. Its functionality is to be able to filter and sort data from the table. As well as select pages, see number of rows and current page.
 ***
@@ -7,14 +7,14 @@ This project is a test table made with "Create-react-app", attentive to the requ
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 ***
-## General Info
+### General Info
 ***
 The content of the table refers to different businesses located in the table, each one with its different data to be displayed.
 ***
-## Technologies
+### Technologies
 ***
 React Js (Create react App)
-## Installation
+### Installation
 ***
 Download the repository, and run some commands in the console.
 https://github.com/Lupohanamichi/Tabla-de-ejercicio.git
