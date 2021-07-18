@@ -6,15 +6,10 @@ import './table.css'
 import { GlobalFilter } from './GlobalFilter'
 
 
-
 export const FilteringTable = () => {
     const columns = useMemo(() => COLUMNS, [])
     const data = useMemo(() => MOCK_DATA, [])
-    // const tableInstance = useTable({
-    //     columns,
-    //     data
-    // },
-    
+  
     const tableInstance = useTable(
         {
         columns,
@@ -34,7 +29,6 @@ export const FilteringTable = () => {
         setGlobalFilter,
     } = tableInstance
     
-
     const { globalFilter } = state
      
     return (
