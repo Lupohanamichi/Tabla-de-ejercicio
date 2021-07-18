@@ -7,9 +7,7 @@ This project is a test table made with "Create-react-app", attentive to the requ
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 ***
-## Table of Contents
-<a name="general-info"></a>
-### General Info
+## General Info
 ***
 The content of the table refers to different businesses located in the table, each one with its different data to be displayed.
 ***
