@@ -1,8 +1,8 @@
-#**Tabla-de-ejercicio**
+**Tabla-de-ejercicio**
 ***
 This project is a test table made with "Create-react-app", attentive to the request made by the KOIBANX team. Its functionality is to be able to filter and sort data from the table. As well as select pages, see number of rows and current page.
 ***
-##Table of contents
+Table of contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
