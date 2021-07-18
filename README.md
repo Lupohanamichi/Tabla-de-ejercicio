@@ -6,7 +6,6 @@ This project is a test table made with "Create-react-app", attentive to the requ
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
-4. [Collaboration](#collaboration)
 ***
 ## Table of Contents
 <a name="general-info"></a>
@@ -23,9 +22,15 @@ Download the repository, and run some commands in the console.
 https://github.com/Lupohanamichi/Tabla-de-ejercicio.git
 ***
 In the console run:
+***
 npm install 
+***
 Then:
+***
 npm install react-table (Dependency that provides all the utilities for working with tables).
+***
 Then run:
+***
 npm start 
+***
 ***
